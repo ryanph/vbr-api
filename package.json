@@ -1,0 +1,14 @@
+{
+  "name": "vbr-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-php": "npx @openapitools/openapi-generator-cli generate -i vbr.yaml -g php -o build --additional-properties='packageName=vbr-api-php,projectName=vbr-api-php' --git-repo-id vbr-api/1.0-rev1 --git-user-id ryanph"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openapitools/openapi-generator-cli": "^2.6.0"
+  }
+}
